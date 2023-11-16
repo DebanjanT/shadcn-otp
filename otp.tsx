@@ -3,8 +3,8 @@ import { useState, Fragment, useRef, useEffect } from "react";
 
 type OtpInputProps = {
   length: number;
-  otp: string;
-  onOtpChange: (otp: string) => void;
+  otp: number;
+  onOtpChange: (otp: number) => void;
 };
 
 let currentOtpIndex: number = 0;
@@ -27,8 +27,10 @@ const Otp = ({ length, otp, onOtpChange }: OtpInputProps): JSX.Element => {
     else setActiveOtpIndex(currentOtpIndex + 1);
 
     setTempOtp(newOtp);
-    onOtpChange(newOtp.join(""));
-    otp = tempOtp.join("");
+    onOtpChange(
+      isNaN(parseInt(newOtp.join(""))) ? 0 : parseInt(newOtp.join(""))
+    );
+    otp = isNaN(parseInt(tempOtp.join(""))) ? 0 : parseInt(tempOtp.join(""));
   };
 
   const handleOnKeyDown = (
