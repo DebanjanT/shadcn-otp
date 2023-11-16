@@ -4,7 +4,7 @@
 https://github.com/DebanjanT/shadcn-otp/assets/89004599/b57dbc99-0a76-4c91-b757-e3b8ea00e78c
 
 
-A Shadcn OTP input re-usable react component. This is a preview of the component in imgur: [Shadcn OTP Preview](https://imgur.com/a/lQZkgzC)
+A Shadcn OTP input re-usable react component. This is a preview of the component in imgur: [Stackblitz Preview](https://stackblitz.com/edit/stackblitz-starters-bwsnly?file=app%2Fpage.tsx)
 
 **How To Use:**
 
